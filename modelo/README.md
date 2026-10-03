@@ -1,12 +1,14 @@
 # Modelo DCF
 
-Aquí irá `DCF_Inditex.xlsx`. Estructura recomendada (una pestaña por bloque):
+`DCF_Inditex.xlsx`: valoración de Inditex por descuento de flujos de caja (fecha de valoración: 03/10/2026).
 
-1. **Supuestos**: crecimiento de ventas, márgenes, capex/ventas, capital circulante, tipo impositivo.
-2. **Histórico**: 4-5 años de cuenta de resultados, balance y flujos (de los informes anuales).
-3. **Proyección**: 5-10 años → EBIT → NOPAT → Flujo de caja libre (FCFF).
-4. **WACC**: tipo libre de riesgo (bono 10 años), beta, prima de riesgo de mercado (Damodaran), coste de la deuda.
-5. **Valoración**: valor presente de flujos + valor terminal (Gordon) → valor empresa → + caja neta → valor por acción.
-6. **Sensibilidad**: tabla WACC × crecimiento a perpetuidad.
+| Pestaña | Contenido |
+|---|---|
+| **Hipótesis** | Datos de mercado, WACC y supuestos operativos 2026e-2030e. Las celdas amarillas son editables. |
+| **DCF** | Histórico 2022-2025, proyección del FCF, valor terminal (Gordon), valor de empresa y valor por acción |
+| **Sensibilidad** | Valor por acción según el WACC (7-9,5%) y el crecimiento a perpetuidad (1,5-3,5%) |
+| **Múltiplos** | EV/EBIT y PER frente a H&M, Fast Retailing, Next y ABF (Primark); precio objetivo combinado, recomendación y campo de fútbol |
 
-Buenas prácticas: entradas en azul, fórmulas en negro, nada de números escritos "a mano" dentro de fórmulas.
+Código de colores: azul = dato introducido a mano · negro = fórmula · verde = dato traído de otra pestaña · amarillo = hipótesis clave.
+
+FCF = EBIT × (1 − t) + amortizaciones − capex − pagos por arrendamientos − inversión en circulante.
